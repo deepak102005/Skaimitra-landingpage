@@ -1,0 +1,584 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>SkaiMitra - Your School's Digital Learning Platform</title>
+  <meta name="description"
+    content="SkaiMitra empowers schools with AI-powered digital learning, smart classroom management, personalized learning support, quizzes, analytics, and real-time academic insights.">
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800;900&display=swap"
+    rel="stylesheet">
+  <link rel="stylesheet" href="Skstyle.css">
+</head>
+
+<body>
+
+  <!-- NAVBAR -->
+  <nav class="navbar" id="navbar">
+    <div class="nav-container">
+      <div class="nav-logo">
+        <img src="assets/logo.png" alt="SkaiMitra Logo" class="logo-img"
+          onerror="this.style.display='none';document.getElementById('logo-text').style.display='flex'">
+        <div class="logo-fallback" id="logo-text">
+          <span class="logo-name">SkaiMitra</span>
+        </div>
+      </div>
+      <div class="nav-links" id="navLinks">
+        <a href="#home">Home</a>
+        <a href="#features">Features</a>
+        <a href="#platform">Platform</a>
+        <a href="#benefits">Benefits</a>
+        <a href="#about">About</a>
+        <a href="#contact">Contact</a>
+      </div>
+    </div>
+  </nav>
+
+  <!-- HERO -->
+  <section class="hero" id="home">
+    <div class="hero-bg">
+      <div class="particle p1"></div>
+      <div class="particle p2"></div>
+      <div class="particle p3"></div>
+      <div class="particle p4"></div>
+      <div class="particle p5"></div>
+    </div>
+    <div class="hero-container">
+      <div class="hero-left" data-aos="fade-right">
+        <div class="hero-badge">🚀 AI-Powered EdTech Platform</div>
+        <h1>YOUR SCHOOL'S<br><span class="gradient-text">DIGITAL LEARNING</span><br>PLATFORM</h1>
+        <p class="hero-sub">SkaiMitra empowers schools with AI-powered digital learning, smart classroom management,
+          personalized learning support, quizzes, analytics, and real-time academic insights.</p>
+        <div class="hero-buttons">
+          <button class="btn-primary btn-lg"
+            onclick="document.getElementById('contact').scrollIntoView({behavior:'smooth'})">Learn More</button>
+          <button class="btn-outline btn-lg"
+            onclick="document.getElementById('features').scrollIntoView({behavior:'smooth'})">Explore Features</button>
+        </div>
+        <div class="trust-badges">
+          <div class="badge"><span>🤖</span> AI Powered Learning</div>
+          <div class="badge"><span>🏫</span> Trusted by Schools</div>
+          <div class="badge"><span>📊</span> Real-Time Analytics</div>
+          <div class="badge"><span>🎯</span> Interactive Learning</div>
+        </div>
+      </div>
+      <div class="hero-right" data-aos="fade-left">
+        <div class="dashboard-preview">
+          <div class="dashboard-header">
+            <div class="dashboard-logo"><span>🎓</span> SkaiMitra</div>
+            <div class="dashboard-user">
+              <span class="notif-bell">🔔</span>
+              <div class="avatar">AM</div>
+            </div>
+          </div>
+          <div class="dashboard-nav">
+            <span class="dnav active">🏠 Home</span>
+            <span class="dnav">📚 Subjects</span>
+            <span class="dnav">📝 Assignments</span>
+            <span class="dnav">📁 Resources</span>
+          </div>
+          <div class="dashboard-stats">
+            <div class="stat-card blue">
+              <div class="stat-icon">📖</div>
+              <div class="stat-val">5</div>
+              <div class="stat-lbl">Enrolled Courses</div>
+            </div>
+            <div class="stat-card green">
+              <div class="stat-icon">✅</div>
+              <div class="stat-val">18/25</div>
+              <div class="stat-lbl">Assignments Done</div>
+            </div>
+            <div class="stat-card purple">
+              <div class="stat-icon">🏆</div>
+              <div class="stat-val">85%</div>
+              <div class="stat-lbl">Average Score</div>
+            </div>
+          </div>
+          <div class="dashboard-chart-area">
+            <div class="chart-box">
+              <div class="chart-title">Subject Performance</div>
+              <div class="chart-bars">
+                <div class="bar-wrap">
+                  <div class="bar" style="height:80%"></div><span>Math</span>
+                </div>
+                <div class="bar-wrap">
+                  <div class="bar" style="height:65%"></div><span>Sci</span>
+                </div>
+                <div class="bar-wrap">
+                  <div class="bar" style="height:90%"></div><span>Eng</span>
+                </div>
+                <div class="bar-wrap">
+                  <div class="bar" style="height:70%"></div><span>Soc</span>
+                </div>
+                <div class="bar-wrap">
+                  <div class="bar" style="height:75%"></div><span>Hindi</span>
+                </div>
+              </div>
+            </div>
+            <div class="mini-cal">
+              <div class="cal-header">📅 May 2026</div>
+              <div class="cal-grid">
+                <span class="cal-day-h">M</span><span class="cal-day-h">T</span><span class="cal-day-h">W</span><span
+                  class="cal-day-h">T</span><span class="cal-day-h">F</span><span class="cal-day-h">S</span><span
+                  class="cal-day-h">S</span>
+                <span></span><span></span><span></span><span class="cal-day">1</span><span class="cal-day">2</span><span
+                  class="cal-day">3</span><span class="cal-day">4</span>
+                <span class="cal-day today">5</span><span class="cal-day">6</span><span class="cal-day">7</span><span
+                  class="cal-day">8</span><span class="cal-day">9</span><span class="cal-day">10</span><span
+                  class="cal-day">11</span>
+              </div>
+            </div>
+          </div>
+          <div class="dashboard-alert">
+            <div class="alert-badge">Preview</div>
+            <div><strong>Assignments Due Soon!</strong><br><small>You have 2 assignments due in 3 days.</small></div>
+            <button class="view-all">View All</button>
+          </div>
+        </div>
+        <div class="float-card f1"><span>📊</span> 85% Avg Score</div>
+        <div class="float-card f2"><span>✅</span> 18/25 Done</div>
+        <div class="float-card f3"><span>📚</span> 5 Courses</div>
+      </div>
+    </div>
+  </section>
+
+  <!-- WHY CHOOSE -->
+  <section class="section why-section" id="about">
+    <div class="container">
+      <div class="section-header" data-aos="fade-up">
+        <h2>Why Choose <span class="gradient-text">SkaiMitra</span></h2>
+        <p>Empower schools with an intelligent learning platform that improves teaching efficiency, enhances student
+          engagement, and provides real-time academic insights.</p>
+      </div>
+      <div class="cards-grid-4" data-aos="fade-up">
+        <div class="feature-card">
+          <div class="card-icon">🤖</div>
+          <h3>AI Powered Learning</h3>
+          <p>Help students understand concepts faster with AI-powered learning modules that provide interactive
+            explanations and personalized support.</p>
+        </div>
+        <div class="feature-card">
+          <div class="card-icon">🎛️</div>
+          <h3>Role Based Dashboards</h3>
+          <p>Give administrators, teachers, and students personalized dashboards so everyone can access the tools and
+            information they need instantly.</p>
+        </div>
+        <div class="feature-card">
+          <div class="card-icon">📈</div>
+          <h3>Progress Tracking</h3>
+          <p>Track student learning in real time and quickly identify areas where additional support is needed.</p>
+        </div>
+        <div class="feature-card">
+          <div class="card-icon">🎯</div>
+          <h3>Interactive Quizzes</h3>
+          <p>Improve knowledge retention through engaging quizzes and assessments that reinforce learning after every
+            lesson.</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- PLATFORM OVERVIEW -->
+  <section class="section platform-section" id="platform">
+    <div class="container">
+      <div class="section-header" data-aos="fade-up">
+        <h2>Platform <span class="gradient-text">Overview</span></h2>
+        <p>Bring administrators, teachers, students, and parents together on one powerful platform to simplify learning
+          management and improve academic outcomes.</p>
+      </div>
+      <div class="cards-grid-3" data-aos="fade-up">
+        <div class="platform-card">
+          <div class="platform-icon">🏛️</div>
+          <h3>Administrator Dashboard</h3>
+          <ul>
+            <li>✅ Manage students and teachers</li>
+            <li>✅ Control courses and classes</li>
+            <li>✅ Monitor platform usage</li>
+            <li>✅ Generate performance reports</li>
+          </ul>
+        </div>
+        <div class="platform-card featured">
+          <div class="platform-badge">Most Used</div>
+          <div class="platform-icon">👩‍🏫</div>
+          <h3>Teacher Dashboard</h3>
+          <ul>
+            <li>✅ Create lessons and assignments</li>
+            <li>✅ Manage classroom activities</li>
+            <li>✅ Track student performance</li>
+            <li>✅ Provide feedback to students</li>
+          </ul>
+        </div>
+        <div class="platform-card">
+          <div class="platform-icon">👨‍🎓</div>
+          <h3>Student Dashboard</h3>
+          <ul>
+            <li>✅ Access lessons and courses</li>
+            <li>✅ Complete quizzes and assignments</li>
+            <li>✅ Track learning progress</li>
+            <li>✅ Engage with interactive content</li>
+          </ul>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- KEY FEATURES -->
+  <section class="section features-section" id="features">
+    <div class="container">
+      <div class="section-header" data-aos="fade-up">
+        <h2>Key <span class="gradient-text">Features</span></h2>
+        <p>Powerful tools designed to support digital learning and classroom management.</p>
+      </div>
+      <div class="features-grid" data-aos="fade-up">
+        <div class="feat-card">
+          <div class="feat-icon">📚</div>
+          <h4>Course Management</h4>
+          <p>Organize lessons, subjects, and courses easily so teachers can deliver structured learning without
+            administrative complexity.</p>
+        </div>
+        <div class="feat-card">
+          <div class="feat-icon">🎯</div>
+          <h4>Quizzes & Assessments</h4>
+          <p>Evaluate student understanding instantly with automated quizzes and assessments that reduce grading time.
+          </p>
+        </div>
+        <div class="feat-card">
+          <div class="feat-icon">📊</div>
+          <h4>Progress Tracking</h4>
+          <p>Gain real-time insights into student performance to support better academic decisions.</p>
+        </div>
+        <div class="feat-card">
+          <div class="feat-icon">🗂️</div>
+          <h4>Content Library</h4>
+          <p>Access and organize all learning materials in one place, making it easier for teachers and students to find
+            resources anytime.</p>
+        </div>
+        <div class="feat-card">
+          <div class="feat-icon">🤖</div>
+          <h4>AI Assistant</h4>
+          <p>Provide instant learning support with an AI assistant that answers questions, guides students, and helps
+            teachers prepare content faster.</p>
+        </div>
+        <div class="feat-card">
+          <div class="feat-icon">🏫</div>
+          <h4>Classroom Management</h4>
+          <p>Simplify classroom organization by managing classes, subjects, and student groups efficiently in one
+            platform.</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- INTERACTIVE LEARNING SPLIT -->
+  <section class="section split-section">
+    <div class="container">
+      <div class="split-layout">
+        <div class="split-left" data-aos="fade-right">
+          <div class="section-tag">Interactive Platform</div>
+          <h2>Interactive Learning <span class="gradient-text">Experience</span></h2>
+          <p>SkaiMitra provides an engaging digital learning environment where students can explore concepts through
+            interactive content and structured lessons.</p>
+          <ul class="check-list">
+            <li><span class="check">✅</span> Visual and interactive lessons</li>
+            <li><span class="check">✅</span> Structured course progression</li>
+            <li><span class="check">✅</span> Concept-based quizzes and assessments</li>
+            <li><span class="check">✅</span> Self-paced learning for better understanding</li>
+          </ul>
+          <button class="btn-primary"
+            onclick="document.getElementById('contact').scrollIntoView({behavior:'smooth'})">Get Started</button>
+        </div>
+        <div class="split-right" data-aos="fade-left">
+          <div class="mini-dashboard">
+            <div class="md-header"><span>📊</span> Learning Analytics</div>
+            <div class="progress-items">
+              <div class="prog-item"><span>Mathematics</span>
+                <div class="prog-bar">
+                  <div class="prog-fill" style="width:85%"></div>
+                </div><span>85%</span>
+              </div>
+              <div class="prog-item"><span>Science</span>
+                <div class="prog-bar">
+                  <div class="prog-fill" style="width:72%"></div>
+                </div><span>72%</span>
+              </div>
+              <div class="prog-item"><span>English</span>
+                <div class="prog-bar">
+                  <div class="prog-fill" style="width:90%"></div>
+                </div><span>90%</span>
+              </div>
+              <div class="prog-item"><span>Social Studies</span>
+                <div class="prog-bar">
+                  <div class="prog-fill" style="width:68%"></div>
+                </div><span>68%</span>
+              </div>
+              <div class="prog-item"><span>Hindi</span>
+                <div class="prog-bar">
+                  <div class="prog-fill" style="width:78%"></div>
+                </div><span>78%</span>
+              </div>
+            </div>
+            <div class="md-stats">
+              <div class="md-stat">
+                <div class="ms-val">18/25</div>
+                <div class="ms-lbl">Assignments</div>
+              </div>
+              <div class="md-stat">
+                <div class="ms-val">5</div>
+                <div class="ms-lbl">Courses</div>
+              </div>
+              <div class="md-stat">
+                <div class="ms-val">85%</div>
+                <div class="ms-lbl">Avg Score</div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- HOW SKAIMITRA IMPROVES -->
+  <section class="section improve-section">
+    <div class="container">
+      <div class="section-header" data-aos="fade-up">
+        <h2>How SkaiMitra <span class="gradient-text">Improves</span> Digital Learning</h2>
+        <p>SkaiMitra is designed to support the entire school ecosystem.</p>
+      </div>
+      <div class="cards-grid-4" data-aos="fade-up">
+        <div class="improve-card">
+          <div class="imp-icon">🏛️</div>
+          <h3>For School Administrators</h3>
+          <p>Manage digital learning efficiently and monitor student performance across different classes and subjects.
+          </p>
+        </div>
+        <div class="improve-card">
+          <div class="imp-icon">👩‍🏫</div>
+          <h3>For Teachers</h3>
+          <p>Simplify lesson delivery, assign quizzes and track student progress through an easy-to-use dashboard.</p>
+        </div>
+        <div class="improve-card">
+          <div class="imp-icon">👨‍🎓</div>
+          <h3>For Students</h3>
+          <p>Learn through engaging lessons, complete quizzes and track personal learning progress.</p>
+        </div>
+        <div class="improve-card">
+          <div class="imp-icon">👪</div>
+          <h3>For Parents</h3>
+          <p>Stay informed about your child's learning progress, view assignments, track performance, and communicate
+            with teachers.</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- KEY BENEFITS -->
+  <section class="section benefits-section" id="benefits">
+    <div class="container">
+      <div class="section-header" data-aos="fade-up">
+        <h2>Key Benefits <span class="gradient-text">for Schools</span></h2>
+        <p>SkaiMitra helps schools improve academic performance while simplifying digital learning management.</p>
+      </div>
+      <div class="cards-grid-4" data-aos="fade-up">
+        <div class="benefit-card">
+          <div class="ben-icon">⏱️</div>
+          <h3>Save Teacher Time</h3>
+          <p>Automate quizzes, grading, and course organization to reduce manual work.</p>
+        </div>
+        <div class="benefit-card">
+          <div class="ben-icon">🎓</div>
+          <h3>Improve Student Performance</h3>
+          <p>Interactive lessons and AI assistance help students understand concepts faster.</p>
+        </div>
+        <div class="benefit-card">
+          <div class="ben-icon">📊</div>
+          <h3>Data Driven Decisions</h3>
+          <p>Track academic progress with analytics and real-time reports.</p>
+        </div>
+        <div class="benefit-card">
+          <div class="ben-icon">🌐</div>
+          <h3>Learn Anywhere</h3>
+          <p>Students and teachers can access learning resources anytime on any device.</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- HOW IT WORKS -->
+  <section class="section steps-section">
+    <div class="container">
+      <div class="section-header" data-aos="fade-up">
+        <h2>How SkaiMitra <span class="gradient-text">Works</span></h2>
+        <p>Start digital learning in three simple steps.</p>
+      </div>
+      <div class="steps-row" data-aos="fade-up">
+        <div class="step-card">
+          <div class="step-num">01</div>
+          <div class="step-icon">🏫</div>
+          <h3>Setup Your School</h3>
+          <p>Add teachers, students and create classes inside the platform.</p>
+        </div>
+        <div class="step-connector"></div>
+        <div class="step-card">
+          <div class="step-num">02</div>
+          <div class="step-icon">📝</div>
+          <h3>Create Courses</h3>
+          <p>Teachers upload lessons, assignments and quizzes.</p>
+        </div>
+        <div class="step-connector"></div>
+        <div class="step-card">
+          <div class="step-num">03</div>
+          <div class="step-icon">📈</div>
+          <h3>Track Learning Progress</h3>
+          <p>Administrators and teachers monitor student performance.</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- BEFORE VS AFTER -->
+  <section class="section compare-section">
+    <div class="container">
+      <div class="section-header" data-aos="fade-up">
+        <h2>Before <span class="gradient-text">vs</span> After SkaiMitra</h2>
+      </div>
+      <div class="compare-grid" data-aos="fade-up">
+        <div class="compare-card before">
+          <div class="compare-header red"><span>❌</span> Before SkaiMitra</div>
+          <ul>
+            <li>❌ Manual records</li>
+            <li>❌ Limited student insights</li>
+            <li>❌ Time consuming grading</li>
+            <li>❌ Scattered learning resources</li>
+            <li>❌ Difficult parent communication</li>
+          </ul>
+        </div>
+        <div class="compare-vs">VS</div>
+        <div class="compare-card after">
+          <div class="compare-header green"><span>✅</span> After SkaiMitra</div>
+          <ul>
+            <li>✅ Automated course management</li>
+            <li>✅ Real time analytics</li>
+            <li>✅ AI learning assistance</li>
+            <li>✅ Centralized digital content</li>
+            <li>✅ Parent progress visibility</li>
+          </ul>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- TRUST SECTION -->
+  <section class="section trust-section">
+    <div class="container">
+      <div class="section-header" data-aos="fade-up">
+        <h2>Why Schools <span class="gradient-text">Trust</span> SkaiMitra</h2>
+        <p>Built to support modern digital classrooms with reliable technology and easy-to-use tools.</p>
+      </div>
+      <div class="cards-grid-4" data-aos="fade-up">
+        <div class="trust-card">
+          <div class="tr-icon">🔒</div>
+          <h3>Secure Platform</h3>
+          <p>School data and student information are protected with secure technology.</p>
+        </div>
+        <div class="trust-card">
+          <div class="tr-icon">⚡</div>
+          <h3>Easy to Use</h3>
+          <p>Simple dashboards allow teachers and students to start using the platform quickly.</p>
+        </div>
+        <div class="trust-card">
+          <div class="tr-icon">📱</div>
+          <h3>Works on All Devices</h3>
+          <p>Access learning content from laptops, tablets, or mobile devices anytime.</p>
+        </div>
+        <div class="trust-card">
+          <div class="tr-icon">🏫</div>
+          <h3>Built for Schools</h3>
+          <p>Designed specifically for school learning environments and classroom needs.</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- CTA -->
+  <section class="cta-section" id="contact">
+    <div class="cta-bg">
+      <div class="glow g1"></div>
+      <div class="glow g2"></div>
+    </div>
+    <div class="container">
+      <div class="cta-content" data-aos="fade-up">
+        <div class="cta-icon">🚀</div>
+        <h2>Start Your Digital Learning Journey</h2>
+        <p>Transform your school with a smarter learning platform that improves teaching efficiency, student engagement,
+          and academic performance.</p>
+        <div class="cta-buttons">
+          <button class="btn-primary btn-lg">Learn More</button>
+          <button class="btn-outline-white btn-lg">Explore Platform</button>
+        </div>
+        <div class="cta-floating">
+          <span class="cf">📚</span><span class="cf">🎓</span><span class="cf">📊</span><span class="cf">🤖</span>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- FOOTER -->
+  <footer class="footer">
+    <div class="container">
+      <div class="footer-grid">
+        <div class="footer-col">
+          <div class="footer-logo">
+            <span class="footer-logo-icon">🎓</span>
+            <span class="footer-brand">SkaiMitra</span>
+          </div>
+          <p class="footer-desc">AI-powered digital learning platform empowering schools across India with smart
+            education technology.</p>
+          <div class="social-links">
+            <a href="#" class="social-btn">in</a>
+            <a href="#" class="social-btn">tw</a>
+            <a href="#" class="social-btn">fb</a>
+            <a href="#" class="social-btn">yt</a>
+          </div>
+        </div>
+        <div class="footer-col">
+          <h4>Quick Links</h4>
+          <ul>
+            <li><a href="#home">Home</a></li>
+            <li><a href="#features">Features</a></li>
+            <li><a href="#benefits">Benefits</a></li>
+            <li><a href="#contact">Contact</a></li>
+          </ul>
+        </div>
+        <div class="footer-col">
+          <h4>Platform</h4>
+          <ul>
+            <li><a href="#">AI Learning</a></li>
+            <li><a href="#">Quizzes</a></li>
+            <li><a href="#">Analytics</a></li>
+            <li><a href="#">Dashboards</a></li>
+          </ul>
+        </div>
+        <div class="footer-col">
+          <h4>Contact</h4>
+          <ul class="contact-list">
+            <li>📧 support@advaitecs.com</li>
+            <li>📞 +91 96039 92299</li>
+            <li>📍 Nidamanuru Poranki Main Road,Vijayawada,521104,Andhra Pradesh, India </li>
+          </ul>
+        </div>
+      </div>
+      <div class="footer-bottom">
+        <p>© 2026 SkaiMitra. All Rights Reserved.</p>
+        <div class="footer-links">
+          <a href="#">Privacy Policy</a>
+          <a href="#">Terms of Service</a>
+        </div>
+      </div>
+    </div>
+  </footer>
+
+  <script src="Skscript.js"></script>
+</body>
+
+</html>
